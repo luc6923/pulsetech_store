@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font -->
+    <link rel="stylesheet" href="style.css" />
+    <title>PulseTech Store</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">PulseTech Store</div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Produtos</li>
+          <li>Contato</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <canvas id="particles"></canvas>
+      <!-- fazer bolinha de fundo -->
+      <div class="tech-circle">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <!-- lista de itens -->
+      <div class="list">
+        <!-- 1 - Vision Pro (ativo por padrão) -->
+        <div class="item active">
+          <div class="product-img">
+            <img src="img/vision-pro.png.png" alt="Vision Pro" />
+          </div>
+          <div class="content">
+            <p class="product-tag">Alta Performance</p>
+            <p class="product-name">Vision Pro</p>
+            <p class="description">
+              Descubra uma nova dimensão com o Vision Pro. Realidade mista com
+              altíssima definição, controle por gestos e uma experiência
+              imersiva para entretenimento, produtividade e inovação digital.
+            </p>
+            <button class="btn">Saiba Mais</button>
+          </div>
+        </div>
+
+        <!-- 2 - Smartwatch -->
+        <div class="item">
+          <div class="product-img">
+            <img src="img/smartwatch.png.png" alt="Smartwatch Pro" />
+          </div>
+          <div class="content">
+            <p class="product-tag">Tecnologia no Pulso</p>
+            <p class="product-name">Smartwatch Pro</p>
+            <p class="description">
+              Controle sua saúde, mensagens e rotina com o Smartwatch Pro. Tela
+              vibrante, resistência à água e funcionalidades inteligentes
+              integradas em um design moderno e minimalista.
+            </p>
+            <button class="btn">Saiba Mais</button>
+          </div>
+        </div>
+
+        <!-- 3 - AirPods Max -->
+        <div class="item">
+          <div class="product-img">
+            <img src="img/airpods-max.png.png" alt="AirPods Max" />
+          </div>
+          <div class="content">
+            <p class="product-tag">Som Premium</p>
+            <p class="product-name">AirPods Max</p>
+            <p class="description">
+              Mergulhe em uma experiência sonora imersiva com os AirPods Max.
+              Cancelamento de ruído ativo, áudio espacial e conforto superior
+              para longas sessões de uso. Som de estúdio em qualquer lugar.
+            </p>
+            <button class="btn">Saiba Mais</button>
+          </div>
+        </div>
+
+        <!-- 4 - Earbuds Pro -->
+        <div class="item">
+          <div class="product-img">
+            <img src="img/earbuds.png.png" alt="Earbuds Pro" />
+          </div>
+          <div class="content">
+            <p class="product-tag">Leveza & Qualidade</p>
+            <p class="product-name">Earbuds Pro</p>
+            <p class="description">
+              Compactos, potentes e com cancelamento de ruído ativo, os Earbuds
+              Pro oferecem qualidade de som cristalina e conforto para o dia a
+              dia. Ideal para chamadas, música e mobilidade total.
+            </p>
+            <button class="btn">Saiba Mais</button>
+          </div>
+        </div>
+
+        <!-- 5 - SSD Portátil -->
+        <div class="item">
+          <div class="product-img">
+            <img src="img/ssd-portatil.png.png" alt="SSD Portátil" />
+          </div>
+          <div class="content">
+            <p class="product-tag">Velocidade & Segurança</p>
+            <p class="product-name">SSD Portátil</p>
+            <p class="description">
+              Leve seus arquivos com você com o SSD Portátil de última geração.
+              Compacto, resistente e com conexão USB-C, ele garante
+              transferências rápidas e segurança de dados para todos os
+              momentos.
+            </p>
+            <button class="btn">Saiba Mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- seção botões -->
+      <div class="arrows">
+        <!-- button 1 -->
+        <button
+          class="arrows-btn"
+          id="prev"
+          type="button"
+          aria-label="Slide anterior"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-left-square"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
+            />
+          </svg>
+        </button>
+
+        <!-- button 2 -->
+        <button
+          class="arrows-btn"
+          id="next"
+          type="button"
+          aria-label="Próximo slide"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-right-square"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+            />
+          </svg>
+        </button>
+      </div>
+      <!-- seção indicadores -->
+      <div class="indicators">
+        <div class="numbers">01</div>
+        <div class="dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="scripts.js"></script>
+  <script src="particulas.js"></script>
+</html>
